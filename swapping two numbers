@@ -16,3 +16,20 @@ public class swap {
 }
 bfor swap a=10 and b=5
 After swap a=5 and b=10
+
+2)
+
+public class swap {
+    public static void main(String[] args) {
+        int a=10;
+        int b=5;
+        System.out.println("bfor swap a="+a+ " and b="+b);
+        a=a^b;
+        b=a^b;
+        a=a^b;
+        System.out.println("After swap a="+a+ " and b="+b);
+    }
+}  
+
+bfor swap a=10 and b=5
+After swap a=5 and b=10
