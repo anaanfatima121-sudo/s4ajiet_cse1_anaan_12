@@ -17,7 +17,7 @@ public class swap {
 bfor swap a=10 and b=5
 After swap a=5 and b=10
 
-2)
+2)swapping two numbers using gate
 
 public class swap {
     public static void main(String[] args) {
