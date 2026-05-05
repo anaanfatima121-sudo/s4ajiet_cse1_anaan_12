@@ -1,0 +1,24 @@
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a string: ");
+        String original = sc.nextLine();
+
+        String cleanStr = original.replaceAll("\\s+", "").toLowerCase();
+        String reversed = "";
+        for (int i = cleanStr.length() - 1; i >= 0; i--) {
+            reversed += cleanStr.charAt(i);
+        }
+        if (cleanStr.equals(reversed)) {
+            System.out.println("\"" + original + "\" is a palindrome.");
+        } else {
+         System.out.println("\"" + original + "\" is not a palindrome.");
+        }
+        sc.close();
+    }
+}
+
+output
+Enter a string: eve
+"eve" is a palindrome.
